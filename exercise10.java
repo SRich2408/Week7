@@ -8,6 +8,13 @@ public class exercise10 {
         System.out.println("Enter a second non negative integer: ");
         int num2 = userInput.nextInt();
 
+        while (num2 > 0) {
+            int temp = num1 % num2;
+            num1 = num2;
+            num2 = temp;
+        }
+        System.out.println("The GCD is: " + num1);
+
         
         
 
